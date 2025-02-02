@@ -1,0 +1,97 @@
+/* Lanes */
+.allLanes{
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+
+    gap: 12px;
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.lane{
+    background-color: #1321AB;
+
+    border-radius: 14px;
+
+    border: solid;
+}
+
+.task{
+    padding: 12px;
+    margin: 12px;
+    
+    cursor: move;
+
+    background-color: #8B8010;
+    border-radius: 30px;
+
+    border: solid;
+
+    text-indent: 4px;
+}
+
+.heading{
+    text-indent: 8px;
+    
+    margin-top: 14px;
+    margin-bottom: 8px;
+
+    font-size: 28px;
+}
+
+.is-dragging{
+    scale: 1.05;
+    background: black;
+    color: white;
+}
+
+/* Whole board */
+body{
+    background-color: #D98426;
+}
+
+/* Add Item Area */
+#addItem{
+    width: 25%;
+    display: flex;
+    /* Will want to change this to flex eventually */
+    margin: auto;
+    margin-top: 5%;
+    margin-left: 450px;
+    margin-bottom: 12px;
+    padding: 12px;
+
+    /* background-color: #1321AB; */
+
+}
+
+input{
+    opacity: 80%;
+    border-radius: 30px;
+    padding: 12px;
+    margin-right: 12px;
+
+    font-size: 16px;
+}
+
+button{
+    width: 10%;
+    border-radius: 30px;
+
+    font-size: 20px;
+}
+
+/* Back to menu */
+h4{
+    font-size: 20px;
+    width: 10%;
+    text-align: center;
+    padding: 12px;
+    border: solid 3px;
+    border-radius: 30px;
+    background-color: #1321AB;
+}
+a{
+    color: black;
+}

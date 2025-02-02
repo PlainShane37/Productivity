@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eisenhower Matrix</title>
+        <link rel = "stylesheet" type = "text/css" href = "matrix.css">
+        <h4><a href = "/Projects/Productivity/index.html">Back to Home</a></h4>
+    </head>
+    <body>
+        <form id = "addItem">
+            <input type = "text" placeholder = "Add an item to do..." id = "itemInput"> 
+            <button type = "submit">+</button>
+        </form>
+
+        <div class = allSections>
+            <div class = "section" id = "do">
+                <h3 class = "top">Urgent</h3>
+                <h3 class = "side">Important</h3>
+
+                <p class = "task" draggable="true">This is an important task</p>
+            </div>
+
+            <div class = "section" id = "schedule">
+                <h3 class = "top">Not Urgent</h3>
+
+                <p class = "task" draggable="true">This is an important task for later</p>
+            </div>
+
+            <div class = "section" id = "delegate">
+                <h3 class = "side">Not Important</h3>
+
+                <p class = "task" draggable="true">This is an important task for someone else</p>
+            </div>
+
+            <div class = "section" id = "remove">
+                <p class = "task" draggable="true">This is not an important task at all</p>
+            </div>
+        </div>
+    </body>
+
+    <script src = "matrix.js"></script>
+</html>

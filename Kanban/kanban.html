@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <title>Kanban Board</title>
+        <link rel="stylesheet" type = "text/css" href="kanban.css">
+
+        <h4><a href = "/Projects/Productivity/index.html">Back to Home</a></h4>
+    </head>
+
+    <body>
+        <div class = "board">
+            <form id = "addItem">
+                <input type = "text" placeholder = "Add an item to do..." id = "itemInput"> 
+                <button type = "submit">+</button>
+            </form>
+
+            <div class = "allLanes">
+                <div class = "lane" id="toDoLane">
+                    <h3 class = "heading">To Do</h3>
+
+                    <p class = "task" draggable="true">This is a test sentence</p>
+                    <p class = "task" draggable="true">This is another test sentence</p>
+                    <p class = "task" draggable="true">This is yet another test sentence</p>
+                </div>
+
+                <div class = "lane" id="container">
+                    <h3 class = "heading">Doing</h3>
+
+                    <p class = "task" draggable="true">This is a test sentence</p>
+                    <p class = "task" draggable="true">This is another test sentence</p>
+                </div>
+
+                <div class = "lane" id="container">
+                    <h3 class = "heading">Done</h3>
+
+                    <p class = "task" draggable="true">This is a test sentence</p>
+                    <p class = "task" draggable="true">This is another test sentence</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src = "kanban.js"></script>
+ </html>
